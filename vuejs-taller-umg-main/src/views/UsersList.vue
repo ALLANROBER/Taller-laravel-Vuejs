@@ -5,6 +5,12 @@
     :loading="loading"
     class="elevation-1"
   >
+<!-- 👇 SLOT PERSONALIZADO PARA MOSTRAR FECHA DE CREACIÓN -->
+    <template #item.created_at="{ item }">
+      {{ new Date(item.created_at).toLocaleString() }}
+    </template>
+
+  
     <template #no-data>
       <div class="pa-6 text-center">No hay usuarios para mostrar.</div>
     </template>
@@ -15,7 +21,7 @@
 import { ref, onMounted, computed } from 'vue'
 import api from '@/services/api'
 
-type Usuario = { id:number; nombre:string; email:string; rol:'admin'|'usuario' }
+type Usuario = { id:number; nombre:string; email:string; rol:'admin'|'usuario';created_at: string }
 
 const props = defineProps<{ searchTerm?: string }>()
 
@@ -26,6 +32,7 @@ const headers = [
   { title: 'Nombre', value: 'nombre' },
   { title: 'Email',  value: 'email' },
   { title: 'Rol',    value: 'rol' },
+  { title: 'Fecha Creacion', value: 'created_at' }
 ]
 
 // carga desde la API
