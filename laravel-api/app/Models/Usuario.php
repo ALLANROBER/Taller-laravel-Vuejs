@@ -24,4 +24,10 @@ class Usuario extends Authenticatable
     protected $hidden = [
        'id',
     ];
+
+    // Relación con tareas
+    public function tareas()
+    {
+        return $this->hasMany(\App\Models\Tarea::class, 'usuario_id');
+    }
 }
