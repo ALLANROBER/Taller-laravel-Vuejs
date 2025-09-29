@@ -1,0 +1,49 @@
+Segundo parcial de desarrollo web
+Nombre: Allan Guamuch
+Carne:2990-19-22192
+Proyecto: https://github.com/ALLANROBER/Taller-laravel-Vuejs.git
+Tener en cuenta que se creo la rama de segundo parcial que se solicito
+
+
+Link para visualización de video y documentación del proyecto: https://drive.google.com/drive/folders/1eXioammiXjO_G2Fif-DD463SYULRfjLQ?usp=sharing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+levantar laravel artisan php artisan serve
+levantar vuejs npm run dev
+git remote add origin https://github.com/ALLANROBER/Taller-laravel-Vuejs.git
+git add .
+git commit -m "AQUI PONES COMENTARIOS"
+git push
+git status
+
+EJEMPLO TOKEN
+"token":"13|zYeNqaoi6JDvuiXqgC4Fj7xA7NC5M0x4fJNxVNq433c8c18f"

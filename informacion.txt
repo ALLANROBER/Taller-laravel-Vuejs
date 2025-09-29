@@ -1,3 +1,0 @@
-Nombre: Allan Guamuch
-Carne:2990-19-22192
-Proyecto: https://github.com/ALLANROBER/Taller-laravel-Vuejs.git
